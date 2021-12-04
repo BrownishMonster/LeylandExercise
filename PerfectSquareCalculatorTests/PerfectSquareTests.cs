@@ -44,7 +44,7 @@ namespace LeylandExercise.Tests
 
         [Fact]
         public void When_NineHundredAndOne_Expect_False()
-            => TestNumber(900, false);
+            => TestNumber(101, false);
 
         [Fact]
         public void When_NegativeNumber_Expect_False()
