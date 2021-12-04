@@ -1,3 +1,4 @@
+using LeylandExercise.App;
 using System;
 using Xunit;
 
@@ -5,6 +6,8 @@ namespace LeylandExercise.Tests
 {
     public class PerfectSquareTests
     {
+        IPerfectSquareCalculator calculator = new PerfectSquareCalculator();
+
         private void TestNumber(int number, bool expected)
         {
             throw new NotImplementedException();
