@@ -1,8 +1,8 @@
 using Xunit;
 
-namespace PerfectSquareCalculatorTests
+namespace LeylandExercise.Tests
 {
-    public class UnitTest1
+    public class PerfectSquareTests
     {
         [Fact]
         public void Test1()
