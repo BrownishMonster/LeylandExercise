@@ -10,7 +10,8 @@ namespace LeylandExercise.Tests
 
         private void TestNumber(int number, bool expected)
         {
-            throw new NotImplementedException();
+            var actual = calculator.IsPerfectSquare(number);
+            Assert.Equal(expected, actual);
         }
 
         [Fact]
