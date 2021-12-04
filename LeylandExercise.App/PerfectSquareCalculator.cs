@@ -10,7 +10,9 @@ namespace LeylandExercise.App
     {
         public bool IsPerfectSquare(int value)
         {
-            return false;
+            var sqrt = Math.Sqrt(value);
+            var numerator = Math.Truncate(sqrt);
+            return sqrt == numerator;
         }
     }
 }
