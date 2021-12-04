@@ -6,7 +6,7 @@ namespace LeylandExercise.Tests
 {
     public class PerfectSquareTests
     {
-        IPerfectSquareCalculator calculator = new PerfectSquareCalculator();
+        IPerfectSquareCalculator calculator = new CustomPerfectSquareCalculator();
 
         private void TestNumber(int number, bool expected)
         {
@@ -37,6 +37,14 @@ namespace LeylandExercise.Tests
         [Fact]
         public void When_TwentySix_Expect_False()
             => TestNumber(26, false);
+
+        [Fact]
+        public void When_NineHundred_Expect_True()
+            => TestNumber(900, true);
+
+        [Fact]
+        public void When_NineHundredAndOne_Expect_False()
+            => TestNumber(900, false);
 
         [Fact]
         public void When_NegativeNumber_Expect_False()
