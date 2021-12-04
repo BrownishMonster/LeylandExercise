@@ -16,7 +16,7 @@ namespace LeylandExercise.Tests
 
         [Fact]
         public void When_NegativeOne_Expect_False()
-            => TestNumber(0, false);
+            => TestNumber(-1, false);
 
         [Fact]
         public void When_Zero_Expect_True()
