@@ -33,5 +33,10 @@ namespace LeylandExercise.Tests
         [Fact]
         public void When_TwentySix_Expect_False()
             => TestNumber(26, false);
+
+        [Fact]
+        public void When_NegativeNumber_Expect_False()
+            => TestNumber(-13, false);
+
     }
 }
